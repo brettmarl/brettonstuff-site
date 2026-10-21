@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>What *is* GoLite Thinking? | Brett on Stuff</title>
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/brettonstuff.2012/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Brett on Stuff &raquo; Feed" href="/feed.xml" />
+
+
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='/wp-includes/css/classic-themes.min.css?ver=6.2' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='twentytwelve-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css' href='/wp-content/themes/brettonstuff.2012/style.css?ver=6.2' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css' href='/wp-content/themes/brettonstuff.2012/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.min.js?ver=3.6.3' id='jquery-core-js'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+
+
+<meta name="generator" content="WordPress 6.2" />
+<link rel="canonical" href="https://www.brettonstuff.com/what-is-golite-thinking/" />
+
+
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body class="post-template-default single single-post postid-936 single-format-standard custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner" >
+		<hgroup style="background: url('http://www.brettonstuff.com/wp-content/uploads/2015/01/blog-header3.jpg') no-repeat; height: 250px">
+			<div class="site-title-panel"></div>
+			<h1 class="site-title"><a href="/" title="Brett on Stuff" rel="home">Brett on Stuff</a></h1>
+			<h2 class="site-description">Ultralight Backpacking, Gear, Trail Guides &amp; Thai Food.</h2>
+			
+		</hgroup>
+		
+
+		
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-main-container"><ul id="menu-main" class="nav-menu"><li id="menu-item-1304" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1304"><a href="http://www.brettonstuff.com/">Home</a></li>
+<li id="menu-item-1258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1258"><a href="/ultralight-backpacking-gearlist/">Ultralight Gear List</a></li>
+<li id="menu-item-1265" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1265"><a href="/category/backpacking/trip-reports/">Trip Reports</a></li>
+<li id="menu-item-1266" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1266"><a href="/category/thai-food/">Thai Food</a></li>
+<li id="menu-item-1259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1259"><a href="/about/">About Brett</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+	</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-936" class="post-936 post type-post status-publish format-standard hentry category-backpacking category-gear-talk category-random-stuff">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">What *is* GoLite Thinking?</h1>
+										<div class="comments-link">
+					<a href="/what-is-golite-thinking/#comments">22 Replies</a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>A recent comment on my gear list page brought to my attention that the latest Jam (v3) Pack from GoLite is now a whopping 1 lbs 15oz. </p>
+<p>Erm   aren&apos;t we going the wrong way? Let&apos;s review the progression:</p>
+<p>Jam v1: 1lb 5oz (21oz) (Circa 2003)</p>
+<p>Jam v2: 1 lb 10oz (26oz) (Circa 2007)</p>
+<p>Jam v3: 1 lb 15oz (31oz) (Circa 2010)</p>
+<p><a href="/wp-content/uploads/2010/03/image.png" rel="thumbnail"><img decoding="async" style="border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px" title="image" border="0" alt="image" src="/wp-content/uploads/2010/03/image_thumb.png" width="240" height="240" srcset="" sizes="" class="noshadow"></a> </p>
+<p align="left">Surely a leading-edge ultralight backpacking company would be making huge technological leaps each year? Shaving ounces OFF their fabrics, straps, padding etc. and striving for a better product  </p>
+<p align="left">Apparently not. </p>
+<p align="left">GoLite appears to be suffering from what (for lack of an existing label) I&apos;ll call  The Ray Effect &#x9D;. The Ray Effect is an observation made by Ray Jardine in his book <a href="/backpacking/the-ray-way/">Beyond Backpacking</a>. </p>
+<p align="left">Ray observes that gear gets heavier the more successful an outdoor company becomes. The more successful a company, the more likely they are to get exposure at big stores &#8211; like REI and Walmart (Yes <a href="http://www.walmart.com/ip/GoLite-TraveLite-Backpack/13278900">GoLite sells to the mega store</a>). These big stores carry  no questions asked &#x9D; return policies and their customers often take advantage of the perk. A little tear in your pack a year or two later? No problem &#8211; REI takes it back. So what do you get if you cross a fragile, needing to be cared for ultralight fabric with a mainstream consumer with high durability expectations? High volumes of returns &#8211; where the product gets sent back to the original manufacturer. Their reaction? Make the product more durable. More durable equals heavier, but more profits. </p>
+<p align="left">So sadly, one of my favorite ultralight backpacking pioneers of the last decade has lost their way. Fortunately, however, there are other outstanding startups pioneering in their place. </p>
+<p align="left">My next backpack will be the <a href="http://www.ula-equipment.com/conduit.asp">ULA Conduit</a> weighing in a scant 17oz (1 lb 1oz), it&apos;s almost a pound lighter than the Jam3 and just as functional. </p>
+<p align="left">Go <a href="http://www.ula-equipment.com/">ULA</a>! I hope I never see you at REI. </p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/category/backpacking/" rel="category tag">Backpacking</a>, <a href="/category/backpacking/gear-talk/" rel="category tag">Gear Talk</a>, <a href="/category/backpacking/random-stuff/" rel="category tag">Random Stuff</a> on <a href="/what-is-golite-thinking/" title="9:47 pm" rel="bookmark"><time class="entry-date" datetime="2010-03-29T21:47:21-07:00">March 29, 2010</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/brettm/" title="View all posts by brettm" rel="author">brettm</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/summer-trip-planning/" rel="prev"><span class="meta-nav">&larr;</span> Summer Trip Planning</a></span>
+					<span class="nav-next"><a href="/pro-mountain-sports-new-website/" rel="next">PRO Mountain Sports &ndash; New Website <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			22 thoughts on &ldquo;<span>What *is* GoLite Thinking?</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-26146">
+		<article id="comment-26146" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/d5d92a610e50f86370dd316e9fa71ece?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/d5d92a610e50f86370dd316e9fa71ece?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn"><a href="http://www.beuteltiere.org" class="url" rel="ugc external nofollow">Basti</a></b> </cite><a href="/what-is-golite-thinking/#comment-26146"><time datetime="2010-03-30T01:02:16-07:00">March 30, 2010 at 1:02 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>&#8220;The Ray Effect&#8221;, a good one! 😉<br />
+Some time ago I realised that GoLite is going to become &#8220;GoHeavy&#8221;. They still make good gear but unfortunately they put their focus more on the interests of the massmarket than on products for the UL-enthusiasts. Of course their ShangriaLa- shelters have lost some weight in 2010 but I think they cut it off in the wrong place (Using a lighter PU-material than choosing a good Silnylon). From experience I know that PU will fail when used in cold conditions (eg. winterbackpacking in Scandinavia).<br />
+We&#8217;re happy that we still got some of their old stuff. (2008er Pinnacle for my wife, 2009er ShangriLa-2, a Breeze and a Day-Pack).<br />
+But for the future I&#8217;ll stay with the cottage-manufacturer. For example my beloved &#8220;huckePack&#8221; made by &#8220;Laufbursche&#8221;.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26151">
+		<article id="comment-26151" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://0.gravatar.com/avatar/62623dc7dc438e064d4885267bf12ab9?s=44&#038;d=mm&#038;r=g' srcset='https://0.gravatar.com/avatar/62623dc7dc438e064d4885267bf12ab9?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn"><a href="http://www.hikinginfinland.com" class="url" rel="ugc external nofollow">Hendrik</a></b> </cite><a href="/what-is-golite-thinking/#comment-26151"><time datetime="2010-03-30T05:41:06-07:00">March 30, 2010 at 5:41 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>One can think about the Ray Way as one wants, and while Jardine is one of the pioneers of UL backpacking, he&#8217;s also a rather odd guy. His rants against cooperations have truth in them, no question, but we live in a society which is all about capitalism (isn&#8217;t the USA build on capitalism?). You can go off-grid, be anti-establishment and live a happy life, but it is not what 99% of all people do.</p>
+<p>What I want to say is that from a business POV I can understand GoLite just fine. Their packs and gear is still over 50% lighter than that of the competition (the major players, not LAUFBURSCHE, ULA, etc.) so for the majority of people it is a good move. We 1% of odd UL and SUL folks are educated &amp; smart and support the cottages, while the 99% can try out a lightweight backpack which is made of durable material. Everyone wins.</p>
+<p>/OT: What I hold highly about GoLite, where the cottages and other major manufacturers still can learn a lot, is that GoLite use 100% recycled materials. Their gear, by being more durable, also does not lead to the throw-away/ use-for-one-season-mentality which seems to be on the rise in the (S)UL community.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-26152">
+		<article id="comment-26152" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/4b6427f22cef86a3c46c4efc9fc9e347?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/4b6427f22cef86a3c46c4efc9fc9e347?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn"><a href="http://backpackingkids.blogspot.com/" class="url" rel="ugc external nofollow">Aaron</a></b> </cite><a href="/what-is-golite-thinking/#comment-26152"><time datetime="2010-03-30T06:31:10-07:00">March 30, 2010 at 6:31 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Yikes!  The new Jam weighs as much as the old Pinnacle!  I guess that makes sense, needing to be more rugged, it is a shame, though.  On the bright side, there are cottage shops popping up all over the place that offer extremely light weight gear all of the time!  Some of the packs that I have seen out there are a fraction of some of GoLite&#8217;s models&#8230; BEFORE they started selling at the boxes!</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26153">
+		<article id="comment-26153" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://2.gravatar.com/avatar/ef9bd48de2002a2069be12f5210244c4?s=44&#038;d=mm&#038;r=g' srcset='https://2.gravatar.com/avatar/ef9bd48de2002a2069be12f5210244c4?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn"><a href="http://backpackbasecamp.com" class="url" rel="ugc external nofollow">Robin</a></b> </cite><a href="/what-is-golite-thinking/#comment-26153"><time datetime="2010-03-30T07:10:01-07:00">March 30, 2010 at 7:10 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Brett,<br />
+Excellent post! I&#8217;ve been wondering the same thing about GoLite for a long time, especially their tents.  I&#8217;m not sure what market they are really trying to reach.  BTW, it is not just that ultralight stuff is fragle &#8211; it is also (generally) more expensive, so mass marketing it is harder.</p>
+<p>I agree with you about all the above but must also say that I think GoLite still makes some great stuff.  I have a GoLite WISP wind shirt that weighs almost nothing and is fantastic quality.  I also have a Quest pack (I think it is 2 1/2 or 3 lbs) and although it is not &#8216;ultralight&#8217; when i need to carry 30+ lbs &#8211; the thing is super comforatble and again &#8211; great quality. </p>
+<p>Robin<br />
+<a href="http://backpackbasecamp.blogspot.com" rel="nofollow">BackpackBaseCamp Blog</a></p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-26157">
+		<article id="comment-26157" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/487e995adca83db1788ead760525037d?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/487e995adca83db1788ead760525037d?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">FamilyGuy</b> </cite><a href="/what-is-golite-thinking/#comment-26157"><time datetime="2010-03-30T09:38:22-07:00">March 30, 2010 at 9:38 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I have a Conduit and love it.  However, although the 17oz is for the basic bag, if you add side pockets, inner hydration sleeve, and inner pocket (to compare to the Jam) you have a pack that weighs closer to 23oz.  Also note that the Jam is a bigger pack and has a 1.4oz back panel (I have a 2007 version as well).  You may want to compare the Conduit to the new Peak for a more meaningful comparison in size and options.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-brettm bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-26159">
+		<article id="comment-26159" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">brettm</b> <span>Post author</span></cite><a href="/what-is-golite-thinking/#comment-26159"><time datetime="2010-03-30T16:04:49-07:00">March 30, 2010 at 4:04 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Hendrik,</p>
+<p>I&#8217;m a big fan of capitalism &#8211; it pays my mortgage 🙂 </p>
+<p>However&#8230; just because there are bigger revenues for GoLite to go after, doesn&#8217;t mean they should forget who their early adopters were that got them to that point. </p>
+<p>GoLite could go after their revenue goals of mass-market highly-durable (and heavier) products yet still maintain a super-light line. This line they could *not* offer to retailers due to high rate of returns and sell direct to the smaller market of folks that want lighter and understand the durability trade-off and are willing to pay top-dollar for it. Sold direct to consumer there would be more margin for GoLite in this and 1) they keep a happy fan-base of mavens that would spread the word and 2) they get a leading-edge product line that explores next-generation materials that hopefully make their way down into the core product line. </p>
+<p>Looks like this thread stimulated some good thoughts from readers though&#8230;<br />
+Cheers,<br />
+-Brett</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-26190">
+		<article id="comment-26190" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/487e995adca83db1788ead760525037d?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/487e995adca83db1788ead760525037d?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">FamilyGuy</b> </cite><a href="/what-is-golite-thinking/#comment-26190"><time datetime="2010-04-01T08:26:21-07:00">April 1, 2010 at 8:26 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>The problem with most UL and SUL products is that they require more user care.  Warranty issues would preclude a large global company like Golite from focusing on these markets.  There are other cottage producers to provide you with what you want and most of them do some custom work.</p>
+<p>I had a look at the new Golite Jam at a local outfitter.  Yes heavier but the hipbelt is exceptional &#8211; much different than the previous model.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26227">
+		<article id="comment-26227" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://2.gravatar.com/avatar/56f761df5d77146ff997139906f2a86e?s=44&#038;d=mm&#038;r=g' srcset='https://2.gravatar.com/avatar/56f761df5d77146ff997139906f2a86e?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn"><a href="http://hikinglady.com" class="url" rel="ugc external nofollow">Hiking Lady</a></b> </cite><a href="/what-is-golite-thinking/#comment-26227"><time datetime="2010-04-08T15:18:09-07:00">April 8, 2010 at 3:18 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Wow, very interesting observations and interesting post.  </p>
+<p>UL products served a niche customer, but once any of them go mainstream (ie, selling at WalMart), they going to have to start appealing to the masses.  I can&#8217;t blame GoLite for increasing the durability (and therefore weight of their packs), but it sure is a shame for people who counted on them for UL gear.   </p>
+<p>We&#8217;ll all have to be on the lookout for the up and coming true UL manufacturers like ULA Conduit mentioned above.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-26264">
+		<article id="comment-26264" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://0.gravatar.com/avatar/663cff230f3ec0c7b80a1d310c51b375?s=44&#038;d=mm&#038;r=g' srcset='https://0.gravatar.com/avatar/663cff230f3ec0c7b80a1d310c51b375?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn"><a href="http://bazbackpack.blogspot.com/" class="url" rel="ugc external nofollow">baz carter</a></b> </cite><a href="/what-is-golite-thinking/#comment-26264"><time datetime="2010-04-14T15:24:07-07:00">April 14, 2010 at 3:24 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I think the weight gain for the V3 Jam is from having a &#8216;better&#8217; back pad/panel, and the new harness with padded hip belt pockets. Not sure if the dyneema they use now is a heavier spec but in any case it&#8217;s as durable as the older stuff, and environmentally friendly.</p>
+<p>BTW Lowe Alpine have launched a new sack called the Zepton 50 made with dyneema, the advertising quoting you can go lighter with no compromise on robustness, yadder, yadder.</p>
+<p>Only thing is that the bag still weighs 1200g! So despite using a lightweight robust material they&#8217;ve still turned out a bag weighing over 2lb! Go figure. And it&#8217;s thirty GBP more expensive than the Golite J3&#8230;</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26285">
+		<article id="comment-26285" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/a0943aafa2fe75640d767bf3be59d017?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/a0943aafa2fe75640d767bf3be59d017?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn"><a href="http://ODadventure.com" class="url" rel="ugc external nofollow">Nick</a></b> </cite><a href="/what-is-golite-thinking/#comment-26285"><time datetime="2010-04-19T19:44:42-07:00">April 19, 2010 at 7:44 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Brett, check out six moons design. I bought the lunar duo from them and love it. Great customer service and total attention to quality.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-brettm bypostauthor even thread-even depth-1" id="li-comment-26286">
+		<article id="comment-26286" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">brettm</b> <span>Post author</span></cite><a href="/what-is-golite-thinking/#comment-26286"><time datetime="2010-04-20T10:21:49-07:00">April 20, 2010 at 10:21 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Nick &#8211; Yeah, love SMD. Nigel had a Duo on our Wonderland Trip last summer. Very cool tent, awesome headroom, comfy for 4 people to sit upright playing cards during a rain storm 🙂</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26501">
+		<article id="comment-26501" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://2.gravatar.com/avatar/877981492df7cde98399ef7a7f71aea5?s=44&#038;d=mm&#038;r=g' srcset='https://2.gravatar.com/avatar/877981492df7cde98399ef7a7f71aea5?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn"><a href="http://www.gossamergear.com" class="url" rel="ugc external nofollow">Glen Van Peski</a></b> </cite><a href="/what-is-golite-thinking/#comment-26501"><time datetime="2010-05-23T11:26:23-07:00">May 23, 2010 at 11:26 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Product weight creep can be observed even among some of the cottage manufacturers, including Gossamer Gear.  I think it&#8217;s a function of appealing to more people.  If we only offer what I use, that&#8217;s not reaching very many people.  If we make products that can be used by &#8216;transitional&#8217; hikers, that are on their way to a 5-lb. base pack weight, or whatever base pack weight they end up at, then we reach more people.  We sell more packs also, but that isn&#8217;t necessarily the goal in and of itself.  Exposing more people to the available options is my passion.  Sometimes showing people they can get a pack with an internal frame and a lot of the features they are used to for under 1.5 lbs. is enough to get them started on lightening their load, and they will eventually transition to an even lighter pack as they progress down the path to lightness.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-brettm bypostauthor even thread-even depth-1" id="li-comment-26515">
+		<article id="comment-26515" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">brettm</b> <span>Post author</span></cite><a href="/what-is-golite-thinking/#comment-26515"><time datetime="2010-05-24T19:50:22-07:00">May 24, 2010 at 7:50 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Glen &#8211; Thanks for the insider insight. Good point that you don&#8217;t want to go so niche to eliminate your market.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-27781">
+		<article id="comment-27781" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://0.gravatar.com/avatar/6979d3d4ea8b07af3101f5200f9130a9?s=44&#038;d=mm&#038;r=g' srcset='https://0.gravatar.com/avatar/6979d3d4ea8b07af3101f5200f9130a9?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">Eric</b> </cite><a href="/what-is-golite-thinking/#comment-27781"><time datetime="2010-10-27T08:14:12-07:00">October 27, 2010 at 8:14 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>It&#8217;s interesting that GoLite succumbed to the &#8220;Ray Effect&#8221; as in the early days of the company many of their top selling items were based off of Ray&#8217;s designs.  He clearly points out in Beyond Backpacking that he has no financial interest in the company, but I wonder what he thinks of their gradual transition from UL principles.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-31826">
+		<article id="comment-31826" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://2.gravatar.com/avatar/b40ed3bfbcb3e357aaea90bf4f8ec467?s=44&#038;d=mm&#038;r=g' srcset='https://2.gravatar.com/avatar/b40ed3bfbcb3e357aaea90bf4f8ec467?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">Dan</b> </cite><a href="/what-is-golite-thinking/#comment-31826"><time datetime="2011-07-30T15:18:20-07:00">July 30, 2011 at 3:18 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Definite case of  weight creep. My Jam (1st Generation) has been through all sorts of hairy trials &#8211; still looks brand new. No problems with durability at all!</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-39345">
+		<article id="comment-39345" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://0.gravatar.com/avatar/c3c88dcc0d65687fca9e6b8c93ce5fe2?s=44&#038;d=mm&#038;r=g' srcset='https://0.gravatar.com/avatar/c3c88dcc0d65687fca9e6b8c93ce5fe2?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">backcountrybill</b> </cite><a href="/what-is-golite-thinking/#comment-39345"><time datetime="2012-09-26T12:54:14-07:00">September 26, 2012 at 12:54 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Hey Brett &#8211; I&#8217;m looking at two packs.  The Golite Jam50L at 30Oz(2012) and the UAL Ohm at 24.5Oz.  I could go with the CDT but I need load lifters to pick some of the weight up off my shoulders.  I&#8217;d willingly carry an extra few oz&#8217;s for comfort a comfortable load.  Depending on the time of the season, early, mid or late (ultra lite) my load for a 3-day trip varies from 23 down to 17pounds (this is for a solo trip).  Either of these will be a huge upgrade over my REI Flaso 50 which weighs 2lbs 10OZ.      </p>
+<p>At $110.00 the price is right for the Golite&#8230;..</p>
+<p>What do you think??</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-brettm bypostauthor even thread-even depth-1" id="li-comment-39448">
+		<article id="comment-39448" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">brettm</b> <span>Post author</span></cite><a href="/what-is-golite-thinking/#comment-39448"><time datetime="2012-10-03T10:40:47-07:00">October 3, 2012 at 10:40 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>the jam is a great pack still, but not the absolute lightest. i think more important is what fits well first, then weight second. if you like the jam &#8211; go for it!</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-39458">
+		<article id="comment-39458" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://0.gravatar.com/avatar/c3c88dcc0d65687fca9e6b8c93ce5fe2?s=44&#038;d=mm&#038;r=g' srcset='https://0.gravatar.com/avatar/c3c88dcc0d65687fca9e6b8c93ce5fe2?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">backcountrybill</b> </cite><a href="/what-is-golite-thinking/#comment-39458"><time datetime="2012-10-03T17:54:51-07:00">October 3, 2012 at 5:54 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Thanks Brett &#8211; Another idea is to get the CDT for my ultralite setup and use the Flashpack for my early season &#8220;heavier&#8221; loads.  I&#8217;m off to do the Copper Ridge Loop on Sunday and my base weight is 11.5lbs.  I&#8217;m going to do it in 3 days as well.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-brettm bypostauthor even thread-even depth-1" id="li-comment-39468">
+		<article id="comment-39468" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">brettm</b> <span>Post author</span></cite><a href="/what-is-golite-thinking/#comment-39468"><time datetime="2012-10-04T09:44:13-07:00">October 4, 2012 at 9:44 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>fun &#8211; i actually just did copper loop a few weeks ago again. i&#8217;ll post a trip report soon. i&#8217;m slacking on my blogging these days &#8211; too much going on 🙂 i did the loop, plus a side-trip up bush creek trail to whatcom pass and taptao lakes. amazing trip. hope the smoke has cleared out for you to get some cool views.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-39474">
+		<article id="comment-39474" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://0.gravatar.com/avatar/c3c88dcc0d65687fca9e6b8c93ce5fe2?s=44&#038;d=mm&#038;r=g' srcset='https://0.gravatar.com/avatar/c3c88dcc0d65687fca9e6b8c93ce5fe2?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">backcountrybill</b> </cite><a href="/what-is-golite-thinking/#comment-39474"><time datetime="2012-10-04T17:02:17-07:00">October 4, 2012 at 5:02 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Wow &#8211; how long did the side trip up brush creek add?  I was looking at that last night.  The weather report looks great so I have to go.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-39475">
+		<article id="comment-39475" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://0.gravatar.com/avatar/c3c88dcc0d65687fca9e6b8c93ce5fe2?s=44&#038;d=mm&#038;r=g' srcset='https://0.gravatar.com/avatar/c3c88dcc0d65687fca9e6b8c93ce5fe2?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">backcountrybill</b> </cite><a href="/what-is-golite-thinking/#comment-39475"><time datetime="2012-10-04T17:55:21-07:00">October 4, 2012 at 5:55 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>One more question &#8211; How was the water situation from Hannegan Pass to Cooper Lk?  Where should I tank up and would two liters get me through?</p>
+<p>Thanks<br />
+bcb</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-brettm bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-39557">
+		<article id="comment-39557" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=44&#038;d=mm&#038;r=g' srcset='https://1.gravatar.com/avatar/15e3101527bfba30ce92adeeac4d285b?s=88&#038;d=mm&#038;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' loading='lazy' decoding='async'/><cite><b class="fn">brettm</b> <span>Post author</span></cite><a href="/what-is-golite-thinking/#comment-39557"><time datetime="2012-10-10T22:13:13-07:00">October 10, 2012 at 10:13 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>sorry for late reply &#8211; email notification of comments aren&#8217;t working and not checking often. ping me at brettm &#8211; gmail &#8211; com for a faster reply 🙂</p>
+<p>as you drop into the hanegan basin after the pass, you&#8217;ll cross the headwaters of the chilliwack &#8211; last place for water for a while unless you want to side-trip to egg lake. there is (was a few weeks ago) snow around selesia you could melt in a pinch. 2L should be plenty to copper. </p>
+<p>be aware that you might not get your first-pick of camps &#8211; so be flexible to maybe end up doing it backwards etc. </p>
+<p>re: the side-trip up bush-creek. added a day of so. my route was:</p>
+<p>day 1: hannegan trailhead -> graybeal<br />
+day 2: graybeal -> whatcom pass -> taptao lakes -> indian camp<br />
+day 3: indian -> silesia<br />
+day 4: silesia -> out.</p>
+<p>have fun &#8211; let me know how it goes.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+		</ol><!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond"><p class="nocomments">Comments are closed.</p></div>
+	
+</div><!-- #comments .comments-area -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Pages</h3><div class="menu-main-container"><ul id="menu-main-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1304"><a href="http://www.brettonstuff.com/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1258"><a href="/ultralight-backpacking-gearlist/">Ultralight Gear List</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1265"><a href="/category/backpacking/trip-reports/">Trip Reports</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1266"><a href="/category/thai-food/">Thai Food</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1259"><a href="/about/">About Brett</a></li>
+</ul></div></aside><aside id="search-3" class="widget widget_search"><h3 class="widget-title">Search</h3><form role="search" method="get" id="searchform" class="searchform" action="https://www.google.com/search"><div><label class="screen-reader-text" for="s">Search for:</label><input type="hidden" name="as_sitesearch" value="brettonstuff.com" /><input type="text" value="" name="q" id="s" /><input type="submit" id="searchsubmit" value="Search" /></div></form></aside><aside id="categories-3" class="widget widget_categories"><h3 class="widget-title">Categories</h3>
+			<ul>
+					<li class="cat-item cat-item-2"><a href="/category/backpacking/">Backpacking</a> (219)
+<ul class='children'>
+	<li class="cat-item cat-item-6"><a href="/category/backpacking/food-reviews/">Food Reviews</a> (18)
+</li>
+	<li class="cat-item cat-item-27"><a href="/category/backpacking/free-gear/">Free Gear</a> (1)
+</li>
+	<li class="cat-item cat-item-4"><a href="/category/backpacking/gear-review/">Gear Reviews</a> (112)
+	<ul class='children'>
+	<li class="cat-item cat-item-20"><a href="/category/backpacking/gear-review/clothing-gear-review-backpacking/">Clothing</a> (20)
+</li>
+	<li class="cat-item cat-item-13"><a href="/category/backpacking/gear-review/cooking/">Cooking</a> (22)
+</li>
+	<li class="cat-item cat-item-15"><a href="/category/backpacking/gear-review/feet/">Footwear</a> (7)
+</li>
+	<li class="cat-item cat-item-16"><a href="/category/backpacking/gear-review/toys/">Gadgets</a> (15)
+</li>
+	<li class="cat-item cat-item-24"><a href="/category/backpacking/gear-review/safety/">Safety</a> (3)
+</li>
+	<li class="cat-item cat-item-14"><a href="/category/backpacking/gear-review/sleep/">Sleeping</a> (9)
+</li>
+	<li class="cat-item cat-item-18"><a href="/category/backpacking/gear-review/water/">Water Treatment</a> (5)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-28"><a href="/category/backpacking/gear-talk/">Gear Talk</a> (6)
+</li>
+	<li class="cat-item cat-item-12"><a href="/category/backpacking/random-stuff/">Random Stuff</a> (21)
+</li>
+	<li class="cat-item cat-item-17"><a href="/category/backpacking/trip-planning/">Trip Planning</a> (27)
+</li>
+	<li class="cat-item cat-item-5"><a href="/category/backpacking/trip-reports/">Trip Reports</a> (25)
+	<ul class='children'>
+	<li class="cat-item cat-item-23"><a href="/category/backpacking/trip-reports/alpinelakes/">Alpine Lakes</a> (3)
+</li>
+	<li class="cat-item cat-item-22"><a href="/category/backpacking/trip-reports/dayhike/">Day Hikes</a> (2)
+</li>
+	<li class="cat-item cat-item-21"><a href="/category/backpacking/trip-reports/cascades/">North Cascades</a> (1)
+</li>
+	<li class="cat-item cat-item-25"><a href="/category/backpacking/trip-reports/pasayten-wilderness/">Pasayten Wilderness</a> (5)
+</li>
+	<li class="cat-item cat-item-10"><a href="/category/backpacking/trip-reports/wct/">West Coast Trail</a> (5)
+</li>
+	<li class="cat-item cat-item-26"><a href="/category/backpacking/trip-reports/wonderland-trail/">Wonderland Trail</a> (8)
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-29"><a href="/category/climbing/">Climbing</a> (1)
+</li>
+	<li class="cat-item cat-item-11"><a href="/category/tech/">Tech</a> (11)
+</li>
+	<li class="cat-item cat-item-3"><a href="/category/thai-food/">Thai Food</a> (8)
+<ul class='children'>
+	<li class="cat-item cat-item-8"><a href="/category/thai-food/ingredients/">Ingredients</a> (4)
+</li>
+	<li class="cat-item cat-item-9"><a href="/category/thai-food/recipes/">Recipes</a> (1)
+</li>
+</ul>
+</li>
+			</ul>
+
+			</aside><aside id="nav_menu-4" class="widget widget_nav_menu"><h3 class="widget-title">Other Stuff</h3><div class="menu-other-menu-container"><ul id="menu-other-menu" class="menu"><li id="menu-item-1260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1260"><a href="/quickbooks-alias-pointer-problem-fix/">QuickBooks Alias Pointer Problem Fix</a></li>
+<li id="menu-item-1261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1261"><a href="/index.php/tech/polaroid-style-thumbnails/">Polaroid Picture Plugin</a></li>
+</ul></div></aside><aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">Links</h3><div class="menu-linkroll-container"><ul id="menu-linkroll" class="menu"><li id="menu-item-1269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1269"><a href="http://www.backpackinglight.com/cgi-bin/backpackinglight/index.html">Backpacking Light</a></li>
+<li id="menu-item-1267" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1267"><a href="http://www.ultralightbackpacker.com/">Joe&#8217;s Ultralight Backpacking</a></li>
+<li id="menu-item-1270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1270"><a href="http://briangreen.net/">Brian Green</a></li>
+<li id="menu-item-1268" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1268"><a href="http://samh.net/backpacking/?do=showproduct&#038;id=114">Sam&#8217;s PNT Hike</a></li>
+<li id="menu-item-1271" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1271"><a href="http://thaifoodandtravel.com/blog/">Thai Food &#038; Travel</a></li>
+</ul></div></aside><aside id="recent-comments-3" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Roselynn</span> on <a href="/wonderland-trail-trip-report-day-7/comment-page-1/#comment-209171">Wonderland Trail Trip Report &#8211; Day 7</a></li><li class="recentcomments"><span class="comment-author-link">Mike</span> on <a href="/dehydrated-red-wine/comment-page-1/#comment-174643">Dehydrated Red Wine</a></li><li class="recentcomments"><span class="comment-author-link">Luis</span> on <a href="/polaroid-style-thumbnails/comment-page-1/#comment-173485">Polaroid Style Thumbnails</a></li><li class="recentcomments"><span class="comment-author-link">brettm</span> on <a href="/how-to-pack-ultralight-for-the-west-coast-trail-in-under-10lbs/comment-page-1/#comment-171242">How to Pack Ultralight for the West Coast Trail in under 10lbs</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://feednflow.com" class="url" rel="ugc external nofollow">Lori</a></span> on <a href="/how-to-pack-ultralight-for-the-west-coast-trail-in-under-10lbs/comment-page-1/#comment-171241">How to Pack Ultralight for the West Coast Trail in under 10lbs</a></li></ul></aside>		</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='/wp-content/themes/brettonstuff.2012/js/navigation.js?ver=20140711' id='twentytwelve-navigation-js'></script>
+
+</body>
+</html>
